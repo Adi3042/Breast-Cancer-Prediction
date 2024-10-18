@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Predcition</title>
+    <link rel="stylesheet" href="../static/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Prediction</h1>
+        <form id="predictionForm" action="/predict" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mean_radius">Mean Radius :</label>
+                    <input type="number" id="mean_radius" name="mean_radius" placeholder="Enter Mean Radius (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_texture">Mean Texture :</label>
+                    <input type="number" id="mean_texture" name="mean_texture" placeholder="Enter Mean Texture (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_perimeter">Mean Perimeter :</label>
+                    <input type="number" id="mean_perimeter" name="mean_perimeter" placeholder="Enter Mean Perimeter (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_area">Mean Area :</label>
+                    <input type="number" id="mean_area" name="mean_area" placeholder="Enter Mean Area (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_smoothness">Mean Smoothness :</label>
+                    <input type="number" id="mean_smoothness" name="mean_smoothness" placeholder="Enter Mean Smoothness (float)" step="any" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mean_concavity">Mean Concavity :</label>
+                    <input type="number" id="mean_concavity" name="mean_concavity" placeholder="Enter Mean Concavity (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_concave_points">Mean Concave Points :</label>
+                    <input type="number" id="mean_concave_points" name="mean_concave_points" placeholder="Enter Mean Concave Points (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_symmetry">Mean Symmetry :</label>
+                    <input type="number" id="mean_symmetry" name="mean_symmetry" placeholder="Enter Mean Symmetry (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_fractal_dimension">Mean Fractal Dimension :</label>
+                    <input type="number" id="mean_fractal_dimension" name="mean_fractal_dimension" placeholder="Enter Mean Fractal Dimension (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="radius_error">Radius Error :</label>
+                    <input type="number" id="radius_error" name="radius_error" placeholder="Enter Radius Error (float)" step="any" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="perimeter_error">Perimeter Error :</label>
+                    <input type="number" id="perimeter_error" name="perimeter_error" placeholder="Enter Perimeter Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="area_error">Area Error :</label>
+                    <input type="number" id="area_error" name="area_error" placeholder="Enter Area Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="smoothness_error">Smoothness Error :</label>
+                    <input type="number" id="smoothness_error" name="smoothness_error" placeholder="Enter Smoothness Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="compactness_error">Compactness Error :</label>
+                    <input type="number" id="compactness_error" name="compactness_error" placeholder="Enter Compactness Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="concavity_error">Concavity Error :</label>
+                    <input type="number" id="concavity_error" name="concavity_error" placeholder="Enter Concavity Error (float)" step="any" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="symmetry_error">Symmetry Error :</label>
+                    <input type="number" id="symmetry_error" name="symmetry_error" placeholder="Enter Symmetry Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="fractal_dimension_error">Fractal Dimension Error :</label>
+                    <input type="number" id="fractal_dimension_error" name="fractal_dimension_error" placeholder="Enter Fractal Dimension Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_radius">Worst Radius :</label>
+                    <input type="number" id="worst_radius" name="worst_radius" placeholder="Enter Worst Radius (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_texture">Worst Texture :</label>
+                    <input type="number" id="worst_texture" name="worst_texture" placeholder="Enter Worst Texture (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_perimeter">Worst Perimeter :</label>
+                    <input type="number" id="worst_perimeter" name="worst_perimeter" placeholder="Enter Worst Perimeter (float)" step="any" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="worst_smoothness">Worst Smoothness :</label>
+                    <input type="number" id="worst_smoothness" name="worst_smoothness" placeholder="Enter Worst Smoothness (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_compactness">Worst Compactness :</label>
+                    <input type="number" id="worst_compactness" name="worst_compactness" placeholder="Enter Worst Compactness (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_concavity">Worst Concavity :</label>
+                    <input type="number" id="worst_concavity" name="worst_concavity" placeholder="Enter Worst Concavity (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_concave_points">Worst Concave Points :</label>
+                    <input type="number" id="worst_concave_points" name="worst_concave_points" placeholder="Enter Worst Concave Points (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_symmetry">Worst Symmetry :</label>
+                    <input type="number" id="worst_symmetry" name="worst_symmetry" placeholder="Enter Worst Symmetry (float)" step="any" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="worst_fractal_dimension">Worst Fractal Dimension :</label>
+                    <input type="number" id="worst_fractal_dimension" name="worst_fractal_dimension" placeholder="Enter Worst Fractal Dimension (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="concave_points_error">Concave Points Error :</label>
+                    <input type="number" id="concave_points_error" name="concave_points_error" placeholder="Enter Concave Points Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="texture_error">Texture Error :</label>
+                    <input type="number" id="texture_error" name="texture_error" placeholder="Enter Texture Error (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="worst_area">Worst Area :</label>
+                    <input type="number" id="worst_area" name="worst_area" placeholder="Enter Worst Area (float)" step="any" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="mean_compactness">Mean Compactness :</label>
+                    <input type="number" id="mean_compactness" name="mean_compactness" placeholder="Enter Mean Compactness (float)" step="any" required>
+                </div>
+            </div>            
+
+            <div class="form-group submit-btn" style="clear:both;">
+                <input type="submit" value="Submit">
+            </div>
+
+            {{final_result}}
+        </form>
+    </div>
+</body>
+</html>
