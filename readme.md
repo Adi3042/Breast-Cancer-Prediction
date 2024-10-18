@@ -93,9 +93,8 @@ Additionally, you can explore the Jupyter notebooks named `EDA` and `Model Train
 
 ## Screenshots
 
-![Breast Cancer Prediction Input](static/form.png)
 ![Breast Cancer Prediction Output](static/welcome.png)
-
+![Breast Cancer Prediction Input](static/form.png)
 
 ## Contributing
 
