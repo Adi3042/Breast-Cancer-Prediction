@@ -92,11 +92,9 @@ Once you have the web application running, you can use it to predict the occuren
 Additionally, you can explore the Jupyter notebooks named `EDA` and `Model Training` in the `notebooks` directory to understand the data analysis and model development process.
 
 ## Screenshots
-<!-- 
-<img width="1440" alt="Breast-Cancer-Prediction-Input" src="https://github.com/rachitdani/Breast-Cancer-Prediction/assets/79761144/191efaf9-6bae-47ed-a613-947c20c2bebd">
 
-<img width="1440" alt="Breast-Cancer-Prediction-Output" src="https://github.com/rachitdani/Breast-Cancer-Prediction/assets/79761144/5afa136c-ef16-488f-9e4b-d39d0521e5a5"> -->
-
+![Breast Cancer Prediction Input](static/form.png)
+![Breast Cancer Prediction Output](static/welcome.png)
 
 
 ## Contributing
